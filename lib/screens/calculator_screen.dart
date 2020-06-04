@@ -19,11 +19,13 @@ class CalculatorScreen extends StatelessWidget {
             Text(
               calculator.value.toString(),
               style: GoogleFonts.montserrat(
-                fontSize: 100,
+                fontSize: 80,
                 fontWeight: FontWeight.w200,
               ),
+              maxLines: 2,
+              overflow: TextOverflow.ellipsis,
             ),
-            SizedBox(height: 505),
+            SizedBox(height: 50),
             ButtonRow(children: [
               NeuCalculatorButton(
                 text: 'AC',
