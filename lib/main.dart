@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
 
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
+      title: 'Flutter Calculator',
       darkTheme: ThemeData(
         brightness: Brightness.dark,
         canvasColor: kDarkBackgroundColour,
