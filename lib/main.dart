@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:fluttercalculator/calculator/calculator.dart';
 import 'package:fluttercalculator/screens/calculator_screen.dart';
 import 'package:fluttercalculator/widgets/neumorphic_theme.dart';
@@ -12,6 +13,10 @@ void main() {
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+
+    // Device Portrait
+    SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);
+
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
